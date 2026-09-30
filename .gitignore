@@ -47,3 +47,6 @@ next-env.d.ts
 
 # captured reference (local ground truth only)
 reference/*/
+
+# origin blackout: the source url stays local
+reference/*/.origin.json
