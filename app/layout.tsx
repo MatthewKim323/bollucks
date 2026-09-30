@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./site.css";
 import "./globals.css";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 export const metadata: Metadata = {
   title: "Bollucks | Control Plane for Agent Reliability",
@@ -10,7 +11,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className="overscroll-none" style={{ scrollBehavior: "auto" }}>
-      <body className="antialiased overscroll-none">{children}</body>
+      <body className="antialiased overscroll-none">
+        {children}
+        <ScrollReveal />
+      </body>
     </html>
   );
 }
